@@ -1,0 +1,35 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    
+        {
+            "name": "g++ build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/home/qys/SLAM/ORBSLAM2_Dynamic-mapping/Examples/RGB-D/rgbd_tum",
+            "args": [
+                "/home/qys/SLAM/ORBSLAM2_Dynamic-mapping/Vocabulary/ORBvoc.txt",
+                "/home/qys/SLAM/ORBSLAM2_Dynamic-mapping/config/TUM2.yaml",
+                "/home/qys/data/TUM/rgbd_dataset_freiburg2_xyz",
+                "/home/qys/data/TUM/rgbd_dataset_freiburg2_xyz/associations.txt"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "orb2.5.1",
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "orb2.5.1",
+            "command": "./build.sh",
+            "args": ["-g"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        }
+        
+    ],
+    "version": "2.0.0"
+}
